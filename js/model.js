@@ -46,3 +46,13 @@ startButton.addEventListener("click", () => {
     uploadButton.classList.remove('d-none');
     speak(`Take a picture of one the following objects: phone or game controller`);
 })
+
+// Score
+const scoreButton = document.getElementById("scoreButton");
+score = 0;
+
+scoreButton.addEventListener("click", () => {
+    score++;
+    document.getElementById("score").innerHTML = score;
+   }
+);
